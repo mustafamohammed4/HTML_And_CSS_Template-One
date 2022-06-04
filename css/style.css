@@ -125,6 +125,14 @@ section {
     font-size: 20px;
     line-height: 1.8;
 }
+@media (max-width:375px) {
+    .landing .text-box h1 {
+        font-size: 35px;
+    }
+    .landing .text-box p {
+        font-size: 15px;
+    }
+}
 /* end landing */
 
 /* start features */
@@ -153,6 +161,14 @@ section {
     margin: 20px 0;
     color: #777;
     line-height: 1.9;
+}
+@media (max-width:375px) {
+    .features .container {
+        grid-template-columns: repeat(auto-fill , minmax(200px , 1fr));
+    }
+    .features .container .feat img {
+        width: 70px;
+    }
 }
 /* end features */
 
@@ -204,6 +220,10 @@ section {
     line-height: 1.7;
     color: #777;
 }
+@media (max-width:375px) {
+    .services .container .services-content {
+        grid-template-columns: repeat(auto-fill , minmax(200px , 1fr));
+}
 /* end services */
 
 /* start portfolio */
@@ -235,6 +255,10 @@ section {
     line-height: 1.8;
     color: #777;
 }
+@media (max-width:375px) {
+    .portfolio .container .portfolio-content {
+        grid-template-columns: repeat(auto-fill , minmax(150px , 1fr));
+}
 /* end portfolio */
  
 /* start about */
@@ -258,7 +282,11 @@ section {
     line-height: 1.7;
     color: #777;
 }
-
+@media (max-width:375px) {
+    .about .container .about-content {
+        grid-template-columns: repeat(auto-fill , minmax(150px , 1fr));
+        gap: 40px;
+}
 /* end about */
 
 /* start contact */
